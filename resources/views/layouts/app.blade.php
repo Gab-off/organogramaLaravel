@@ -8,11 +8,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Organograma - @yield('title')</title>
 </head>
-<body>
-<div class="container mt-4 mx-auto">
-    @include('partials.header')
+<body class="bg-gray-100 flex flex-col min-h-screen">
+@include('partials.header')
+<main class="container mt-4 p-4 my-8 flex-grow mx-auto">
     @yield('content')
-    @yield('footer')
-</div>
+</main>
+@include('partials.footer')
 </body>
 </html>
