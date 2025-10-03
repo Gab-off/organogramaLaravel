@@ -13,7 +13,7 @@
         #header { background-color: #003366; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
         #header img { height: 60px; } /* Ajuste conforme a logo */
         #container { display: flex; min-height: 100vh; }
-        #sidebar { width: 250px; background-color: #ffffff; padding-top: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); }
+        #sidebar { min-width: 250px; background-color: #ffffff; padding-top: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); }
         #main-content { flex-grow: 1; padding: 20px; }
         .menu-title { font-weight: bold; padding: 10px 20px; color: #003366; text-transform: uppercase; font-size: 0.9em; border-bottom: 1px solid #eee; }
         .menu-link { display: block; padding: 8px 20px 8px 30px; color: #333; text-decoration: none; font-size: 0.9em; }
@@ -50,7 +50,7 @@
             <a href="{{ route('cproj.organizacao-obras') }}" class="menu-link cell-link">Organização de Obras</a>
             <a href="{{ route('cproj.arquitetonicos') }}" class="menu-link cell-link">Projetos Arquitetônicos</a>
             <a href="{{ route('cproj.complementares') }}" class="menu-link cell-link">Projetos Complementares</a>
-            
+
             {{-- Coordenadoria da Usina de Asfalto --}}
             <div class="menu-title">Coordenadoria da Usina de Asfalto</div>
             <a href="{{ route('cusa.logistica') }}" class="menu-link cell-link">Logística</a>
@@ -58,17 +58,23 @@
             {{-- Coordenadoria de Manutenção --}}
             <div class="menu-title">Coordenadoria de Manutenção</div>
             <a href="{{ route('cman.sede-01') }}" class="menu-link cell-link">Gestão Operacional - Sede 01</a>
-            {{-- ... adicione as outras 3 células de Manutenção aqui ... --}}
+            <a href="{{ route('cman.sede-02') }}" class="menu-link cell-link">Gestão Operacional - Sede 02</a>
+            <a href="{{ route('cman.distrito-oeste-03') }}" class="menu-link cell-link">Gestão Operacional - Distrito Oeste 03</a>
+            <a href="{{ route('cman.distrito-leste-04') }}" class="menu-link cell-link">Gestão Operacional - Distrito Oeste 04</a>
 
             {{-- Coordenadoria Jurídica --}}
             <div class="menu-title">Coordenadoria Jurídica</div>
             <a href="{{ route('cjur.contratos') }}" class="menu-link cell-link">Gestão de Contratos</a>
-            {{-- ... adicione as outras 2 células de Jurídica aqui ... --}}
+            <a href="{{ route('cjur.avaliacao-imoveis') }}" class="menu-link cell-link">Avaliação de imóveis</a>
+            <a href="{{ route('cjur.auditoria-interna') }}" class="menu-link cell-link">Auditoria interna</a>
 
             {{-- Coordenadoria Administrativa Financeira --}}
             <div class="menu-title">Coordenadoria Adm. Financeira</div>
             <a href="{{ route('caf.convenios') }}" class="menu-link cell-link">Gestão de Convênios</a>
-            {{-- ... adicione as outras 4 células de Adm. Financeira aqui ... --}}
+            <a href="{{ route('caf.acompanhamento-social') }}" class="menu-link cell-link">Acompanhamento social</a>
+            <a href="{{ route('caf.gestao-logistica') }}" class="menu-link cell-link">Gestão e Logística</a>
+            <a href="{{ route('caf.ti') }}" class="menu-link cell-link">Tecnologia da informação</a>
+            <a href="{{ route('caf.orcamento-adm') }}" class="menu-link cell-link">Orçamento administrativo</a>
         </aside>
 
         {{-- CONTEÚDO PRINCIPAL (MAIN CONTENT) --}}
