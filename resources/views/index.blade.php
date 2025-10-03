@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.novo-layout')
 
 @section('title', 'Organograma SEINFRA - Página Inicial')
 

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.novo-layout')
 @section('title', $titulo ?? 'Dashboard da Célula')
 
 @section('content')
@@ -7,12 +7,12 @@
 
         {{-- Título Principal (Cor da SEINFRA/Sobral) --}}
         <h1 class="text-3xl font-bold text-blue-800 mb-4">{{ $titulo ?? 'Célula' }}</h1>
-        
+
         {{-- Descrição da Célula --}}
         <p class="text-gray-700 mb-6 border-b pb-4">{{ $descricao ?? 'Esta célula é responsável por...' }}</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             {{-- Card 1: Principais Atribuições (Inspirado no seu código) --}}
             <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
                 <h2 class="text-xl font-semibold text-blue-600 mb-4 border-b pb-2">Principais Atribuições</h2>
@@ -36,7 +36,7 @@
                     <span class="text-gray-900">(88) 1234-5678</span>
                 </p>
             </div>
-            
+
             {{-- Card 3: Dashboard/Indicadores (Pode ser vazio para customização) --}}
             <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
                 <h2 class="text-xl font-semibold text-blue-600 mb-4 border-b pb-2">Indicadores Rápidos</h2>
